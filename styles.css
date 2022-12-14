@@ -1,0 +1,91 @@
+/*using media for the display of the calculator*/
+@media only screen and (max-width: 50px) {
+}
+
+/* body of the html page */
+body {
+    overflow-x: hidden;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightskyblue;
+}
+
+/* the display of the calculator*/
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightslategray;
+    padding: 20px;
+    border-radius: 5px;
+}
+/*colouring buttons*/
+.display {
+    height: 100px;
+    background-color: goldenrod;
+    color: white;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+}
+
+.prevNumber,
+.newNumber {
+    margin: 15px;
+}
+/*attributes for each row of buttons*/
+.row {
+    display: flex;
+    justify-content: space-between;
+    min-width: 50%;
+}
+/*button clear style*/
+#clear {
+    flex: 1;
+    border-radius: 15px;
+    margin: 5px 10px;
+}
+/*button zero style*/
+#zero {
+    flex: 1;
+    border-radius: 15px;
+    margin: 5px 10px;
+
+}
+/*rest of buttons styles*/
+button {
+    background-color:gold;
+    color: white;
+    border: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 31px;
+    height: 130px;
+    width: 130px;
+    min-height: 13px;
+    min-width: 13px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 20%;
+}
+
+.btn-number:active {
+    background-color: gold;
+}
+/*function buttons style*/
+.btn-clear:active,
+.btn-delete:active,
+.btn-equals:active {
+    background-color: gold;
+}
+
+section .func-button {
+    background-color: gold;
+}
